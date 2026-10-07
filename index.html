@@ -10,7 +10,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{font-family:'Inter','Noto Sans Bengali',sans-serif;background:#0a0a0a;color:#fff;overflow:hidden;height:100vh;width:100vw}
+body{font-family:'Inter','Noto Sans Bengali',sans-serif;background:#0a0a0a;color:#fff;overflow:hidden;height:100dvh;width:100vw}
 .app{position:relative;width:100%;height:100%;max-width:430px;margin:0 auto;overflow:hidden;background:#111}
 .page-list{position:absolute;inset:0;background:linear-gradient(180deg,#0d2a1f 0,#0a1f18 40%,#071510 100%);z-index:10;display:flex;flex-direction:column;transition:transform .45s cubic-bezier(0.4,0,0.2,1)}
 .page-list.hidden{transform:translateX(-100%)}
@@ -63,14 +63,15 @@ body{font-family:'Inter','Noto Sans Bengali',sans-serif;background:#0a0a0a;color
 .sf-round-btn{width:26mm;height:26mm;max-width:78px;max-height:78px;border-radius:50%;background:linear-gradient(135deg,#ff1744 0,#ff5722 50%,#ffeb3b 100%);border:3px solid rgba(255,255,255,0.9);box-shadow:0 0 16px rgba(255,193,7,0.7),0 0 25px rgba(255,23,68,0.5);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s,box-shadow .15s,opacity .3s ease;opacity:0;pointer-events:none}
 .sf-round-btn.show{opacity:1;pointer-events:auto}
 .sf-round-btn:active{transform:scale(0.92);box-shadow:0 0 8px rgba(255,193,7,0.9),0 0 15px rgba(255,23,68,0.8)}
-.chat-area{position:relative;z-index:8;flex:1;display:flex;flex-direction:column;padding:6px 10px 85px;overflow:hidden}
+.chat-area{position:relative;z-index:8;flex:1;display:flex;flex-direction:column;padding:6px 10px 135px;overflow:hidden}
 .chat-messages{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:6px;scrollbar-width:none}
 .chat-messages::-webkit-scrollbar{display:none}
 .chat-msg{background:rgba(0,0,0,0.35);padding:5px 10px;border-radius:12px;font-size:12px;max-width:85%;align-self:flex-start;line-height:1.35}
 .chat-msg .user{color:#f5c518;font-weight:600}
 .chat-msg.system{background:rgba(0,230,118,0.15);color:#a0f0c0;align-self:center;font-size:11px}
 .chat-msg.gift-msg{background:rgba(255,65,108,0.25)}
-.room-bottom{position:absolute;bottom:10px;left:0;right:0;z-index:15;padding:8px 8px 12px;display:flex;gap:8px;align-items:center;justify-content:center;background:linear-gradient(transparent,rgba(0,0,0,0.7))}
+/* ড্যাশবোর্ড নিচ থেকে প্রায় আধা ইঞ্চি (48px) উপরে তোলা হয়েছে */
+.room-bottom{position:absolute;bottom:48px;left:0;right:0;z-index:30;padding:8px 8px 12px;display:flex;gap:8px;align-items:center;justify-content:center;background:linear-gradient(transparent,rgba(0,0,0,0.8))}
 .chat-btn{width:52px;height:52px;flex:none;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:50%;padding:0;color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .seat-emoji-btn{width:52px;height:52px;flex:none;background:rgba(255,193,7,0.25);border:1px solid rgba(255,193,7,0.4);border-radius:50%;padding:0;color:#fff;font-size:22px;cursor:pointer;display:none;align-items:center;justify-content:center}
 .action-btn{width:52px;height:52px;border-radius:50%;border:0;display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;background:rgba(255,255,255,0.15);color:#fff;flex-shrink:0}
